@@ -123,3 +123,13 @@ for transaction in daily_transactions_split:
     transaction_clean.append(data_point.strip(" ").replace("\n",""))
   transactions_clean.append(transaction_clean)
 # print(transactions_clean)
+
+customers = []
+sales = []
+thread_sold = []
+
+for transaction in transactions_clean:
+  customers.append(transaction[0].strip())
+  sales.append(transaction[1].strip())
+  thread_sold.append(transaction[2].strip())
+# print(thread_sold)
