@@ -133,3 +133,5 @@ for transaction in transactions_clean:
   sales.append(transaction[1].strip())
   thread_sold.append(transaction[2].strip())
 # print(thread_sold)
+
+total_sales = 0
